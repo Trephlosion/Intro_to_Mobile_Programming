@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Physics Calculator</string>
+    <string name="tvTitle">Physics Calculator</string>
+    <string name="tfMass">Enter Mass</string>
+    <string name="tfAccel">Enter Acceleration</string>
+    <string name="tvResults">Pending Calculation...</string>
+    <string name="btCalculate">Calculate</string>
+    <string name="tvTitleM">Mass:</string>
+    <string name="tvTitleA">Acceleration:</string>
+    <string name="tvTitleF">Force:</string>
+    <string name="tvFormula">F=m·a</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">City Guide</string>
+    <string-array name="lvGroup">
+        <item>Art Institute of Chicago</item>
+        <item>Magnificent Mile</item>
+        <item>Willis Tower</item>
+        <item>Chicago Bean</item>
+        <item>Water Tower</item>
+    </string-array>
+    <string name="pier">Navy Pier Image</string>
+    <string name="water">Water Tower Image</string>
+    <string name="willis">Willis Tower Image</string>
+</resources>

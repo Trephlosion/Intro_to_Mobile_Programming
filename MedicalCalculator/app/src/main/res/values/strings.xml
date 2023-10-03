@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Medical Calculator</string>
+    <string name="btConvert">Convert Weight</string>
+    <string name="etPatientWeight">Weight of Patient</string>
+    <string name="tvResults">Converted Weight is</string>
+    <string name="tvTitle">Convert Patient Weight</string>
+    <string name="rbKiloToLb">Convert Kilograms to Pounds</string>
+    <string name="rbLbToKilo">Convert Pounds to Kilograms</string>
+</resources>

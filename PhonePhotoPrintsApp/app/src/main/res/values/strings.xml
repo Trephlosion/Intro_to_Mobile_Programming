@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Phone Photo Prints App</string>
+    <string name="etday">Enter Number of Prints</string>
+    <string name="rb4x6">4 × 6 (19 cents)</string>
+    <string name="rb5x7">5 × 7 (49 cents)</string>
+    <string name="rb8x10">8 × 10 (79 cents)</string>
+    <string name="tvFinalCost">Please calculate an answer first.</string>
+    <string name="btCompute">Order Prints</string>
+    <string name="tvTitle">Photo Prints App</string>
+    <string name="tvTitle2">Choose a Photo Size</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Power Tool Rental App</string>
+    <string name="etday">Enter Number of Days</string>
+    <string name="rbpWash">Power Washer</string>
+    <string name="rbtiller">Tiller</string>
+    <string name="tvFinalCost">Please calculate an answer first.</string>
+    <string name="btCompute">Compute Cost</string>
+    <string name="tvTitle">Power Tool Rentals</string>
+    <string name="tvTitle2">Choose a Power Tool</string>
+</resources>
