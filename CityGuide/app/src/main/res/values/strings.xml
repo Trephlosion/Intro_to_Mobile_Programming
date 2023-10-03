@@ -7,7 +7,7 @@
         <item>Chicago Bean</item>
         <item>Water Tower</item>
     </string-array>
-    <string name="pier">Navy Pier Image</string>
+    <string name="bean">Chicago Bean Image</string>
     <string name="water">Water Tower Image</string>
     <string name="willis">Willis Tower Image</string>
 </resources>
