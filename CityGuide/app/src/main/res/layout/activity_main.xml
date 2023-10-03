@@ -16,22 +16,18 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/travel"
+        android:entries="@array/lvGroup"
         android:textSize="20sp"
-        android:text="@+id/travel"
-        app:drawableLeftCompat="@drawable/ic_launcher_foreground" />
+        app:drawableLeftCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="MissingConstraints">
+
+
+    </ListView>
 
 </RelativeLayout>
