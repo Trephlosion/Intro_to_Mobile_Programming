@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     int choice;
     String groupChoice;
 
+    String advent = "Adventure";
+
+    String relax = "Relaxation";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,18 +34,28 @@ public class MainActivity extends AppCompatActivity {
         groupChoice = interest.getSelectedItem().toString();
         travel.setOnClickListener(view -> {
 
-            if (Beach.isChecked() && groupChoice.equals("Adventure")) {
+            if (Beach.isChecked() && groupChoice == advent) {
                 choice = 0;
-            } else if (Beach.isChecked() && groupChoice.equals("Relaxation")) {
+//                startActivity(new Intent(MainActivity.this, Tamarindo.class));
+            }
+            if (Beach.isChecked() && groupChoice == relax) {
                 choice = 1;
-            } else if (History.isChecked() && groupChoice.equals("Adventure")) {
+//                startActivity(new Intent(MainActivity.this, Maldives.class));
+            }
+            if (History.isChecked() && groupChoice == advent) {
                 choice = 2;
-            } else if (History.isChecked() && groupChoice.equals("Relaxation")) {
+//                startActivity(new Intent(MainActivity.this, Petra.class));
+            }
+            if (History.isChecked() && groupChoice == relax) {
                 choice = 3;
-            } else {
+//                startActivity(new Intent(MainActivity.this, Bath.class));
+            }
+/*
+            else {
                 Toast.makeText(MainActivity.this, "Something went wrong, restart app.",
                         Toast.LENGTH_LONG).show();
             }
+*/
 
             switch (choice) {
                 case 0:
@@ -56,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
                 case 3:
                     startActivity(new Intent(MainActivity.this, Bath.class));
                     break;
+                default:
+                    Toast.makeText(MainActivity.this, "Something went wrong, restart app.",
+                            Toast.LENGTH_LONG).show();
+                    break;
+
 
             }
 
