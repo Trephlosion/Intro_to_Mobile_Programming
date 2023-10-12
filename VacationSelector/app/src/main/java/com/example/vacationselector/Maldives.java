@@ -16,8 +16,8 @@ public class Maldives extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        Button back = (Button) findViewById(R.id.btBack3);
-        back.setOnClickListener(new View.OnClickListener() {
+        Button back3 = (Button) findViewById(R.id.btBack3);
+        back3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Maldives.this, MainActivity.class));

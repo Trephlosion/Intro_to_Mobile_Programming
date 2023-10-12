@@ -16,8 +16,8 @@ public class Bath extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        Button back = (Button) findViewById(R.id.btBack);
-        back.setOnClickListener(new View.OnClickListener() {
+        Button back1 = (Button) findViewById(R.id.btBack1);
+        back1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Bath.this, MainActivity.class));

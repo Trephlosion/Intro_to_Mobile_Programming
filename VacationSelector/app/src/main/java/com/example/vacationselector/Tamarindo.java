@@ -17,8 +17,8 @@ public class Tamarindo extends AppCompatActivity {
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        Button back = (Button) findViewById(R.id.btBack4);
-        back.setOnClickListener(new View.OnClickListener() {
+        Button back4 = (Button) findViewById(R.id.btBack4);
+        back4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Tamarindo.this, MainActivity.class));

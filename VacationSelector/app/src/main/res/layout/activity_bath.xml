@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Bath">
 
+    <Button
+        android:id="@+id/btBack1"
+        android:layout_width="289dp"
+        android:layout_height="69dp"
+        android:text="@string/btBack"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768" />
+
     <TextView
         android:id="@+id/tvName3"
         android:layout_width="326dp"
@@ -19,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/tvDestination"
@@ -34,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.229" />
 
     <TextView
         android:id="@+id/tvDescription"
@@ -51,15 +63,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <Button
-        android:id="@+id/btBack"
-        android:layout_width="289dp"
-        android:layout_height="69dp"
-        android:text="@string/btBack"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.768" />
 </androidx.constraintlayout.widget.ConstraintLayout>

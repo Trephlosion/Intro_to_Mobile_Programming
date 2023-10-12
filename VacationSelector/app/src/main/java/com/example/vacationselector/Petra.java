@@ -16,8 +16,8 @@ public class Petra extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.mipmap.ic_launcher);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-        Button back = (Button) findViewById(R.id.btBack2);
-        back.setOnClickListener(new View.OnClickListener() {
+        Button back2 = (Button) findViewById(R.id.btBack2);
+        back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Petra.this, MainActivity.class));
