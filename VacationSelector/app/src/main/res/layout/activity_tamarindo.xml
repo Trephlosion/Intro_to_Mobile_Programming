@@ -8,48 +8,57 @@
 
     <Button
         android:id="@+id/btBack4"
-        android:layout_width="205dp"
-        android:layout_height="49dp"
+        android:layout_width="283dp"
+        android:layout_height="78dp"
         android:text="@string/btBack"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.768" />
+        app:layout_constraintVertical_bias="0.745" />
 
     <TextView
         android:id="@+id/tvDescription4"
-        android:layout_width="366dp"
-        android:layout_height="146dp"
+        android:layout_width="394dp"
+        android:layout_height="200dp"
         android:text="@string/tvTDescription"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/tvDestination4"
         android:layout_width="302dp"
         android:layout_height="63dp"
         android:text="@string/tvDestination"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
-
-    <TextView
-        android:id="@+id/tvName4"
-        android:layout_width="302dp"
-        android:layout_height="63dp"
-        android:text="@string/tvTName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintVertical_bias="0.232" />
+
+    <TextView
+        android:id="@+id/tvName4"
+        android:layout_width="326dp"
+        android:layout_height="41dp"
+        android:text="@string/tvTName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315" />
 </androidx.constraintlayout.widget.ConstraintLayout>

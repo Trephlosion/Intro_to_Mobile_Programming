@@ -6,52 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="315dp"
-        android:layout_height="53dp"
-        android:text="@string/tvTitle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
     <Button
         android:id="@+id/btDestination"
         android:layout_width="322dp"
         android:layout_height="78dp"
         android:text="@string/btDestination"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.816" />
-
-    <RadioGroup
-        android:id="@+id/rgVacationType"
-        android:layout_width="369dp"
-        android:layout_height="94dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604">
-
-        <RadioButton
-            android:id="@+id/rbBeach"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/rbBeach" />
-
-        <RadioButton
-            android:id="@+id/rbHistory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rbHistory" />
-    </RadioGroup>
 
     <Spinner
         android:id="@+id/spInterests"
@@ -63,30 +29,81 @@
         app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.282" />
 
     <TextView
         android:id="@+id/tvInterests"
         android:layout_width="256dp"
         android:layout_height="39dp"
         android:text="@string/tvInterests"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="315dp"
+        android:layout_height="53dp"
+        android:text="@string/tvTitle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <RadioGroup
+        android:id="@+id/rgVacationType"
+        android:layout_width="369dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543">
+
+        <RadioButton
+            android:id="@+id/rbBeach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/rbBeach"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/rbHistory"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/tvType"
-        android:layout_width="256dp"
-        android:layout_height="39dp"
+        android:layout_width="321dp"
+        android:layout_height="40dp"
         android:text="@string/tvType"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.485" />
+        app:layout_constraintVertical_bias="0.444" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

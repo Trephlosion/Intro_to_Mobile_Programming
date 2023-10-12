@@ -8,33 +8,42 @@
 
     <TextView
         android:id="@+id/tvName3"
-        android:layout_width="302dp"
-        android:layout_height="63dp"
+        android:layout_width="326dp"
+        android:layout_height="36dp"
         android:text="@string/tvBName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281" />
+        app:layout_constraintVertical_bias="0.332" />
 
     <TextView
         android:id="@+id/tvDestination"
         android:layout_width="302dp"
         android:layout_height="63dp"
         android:text="@string/tvDestination"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.251" />
 
     <TextView
         android:id="@+id/tvDescription"
-        android:layout_width="366dp"
-        android:layout_height="162dp"
+        android:layout_width="404dp"
+        android:layout_height="197dp"
         android:text="@string/tvBDescription"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -44,9 +53,10 @@
 
     <Button
         android:id="@+id/btBack"
-        android:layout_width="205dp"
-        android:layout_height="49dp"
+        android:layout_width="289dp"
+        android:layout_height="69dp"
         android:text="@string/btBack"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
