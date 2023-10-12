@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Vacation Selector</string>
+    <string name="tvTitle">Destination Finder</string>
+    <string name="rgVacationType">Vacation Type</string>
+    <string name="rbHistory">Historical Journey</string>
+    <string name="rbBeach">Beach Getaway</string>
+    <string-array name="spInterests">
+        <item>Adventure</item>
+        <item>Relaxation</item>
+    </string-array>
+    <string name="btDestination">Find Destination</string>
+    <string name="tvDSS">Destination Suggestion Screen</string>
+    <string name="tvDestination">Suggested Destination</string>
+    <string name="tvTName">Tamarindo, Costa Rica</string>
+    <string name="tvMName">Maldives</string>
+    <string name="tvPName">Petra, Jordan</string>
+    <string name="tvBName">Bath, England</string>
+    <string name="tvTDescription">Description: Nestled on the Pacific coast of Costa Rica, Tamarindo offers not only pristine beaches but also a thrilling array of adventure activities. While the golden sands invite relaxation, the surrounding waters are a haven for surfers, with waves suitable for both novices and experts.</string>
+    <string name="tvMDescription">Description: Located in the heart of the Indian Ocean, the Maldives is a serene archipelago of over 1,000 coral islands. Famed for its luxurious overwater bungalows, it offers a quintessential beach getaway for relaxation seekers. Imagine waking up to the soothing sound of waves gently lapping beneath your villa, with endless horizons of turquoise waters stretching as far as the eye can see.</string>
+    <string name="tvPDescription">Description: Carved into the rose-red cliffs of southern Jordan lies Petra, an archaeological and historical marvel dating back to the 4th century BC. Once a thriving trading hub of the Nabatean kingdom, this city of stone offers visitors a unique blend of historical journey and adventure. Enter through the Siq, a narrow canyon leading to Petra\'s most iconic monument, the Treasury (Al-Khazneh).</string>
+    <string name="tvBDescription">Description: Nestled in the rolling countryside of Somerset, Bath is a beacon for those seeking a blend of historical richness and relaxation. Renowned for its well-preserved Roman-built baths, the city has been a center for leisure and wellness since ancient times. Stroll through the cobbled streets and explore the Roman Baths, where steaming spring water fills ancient stone pools, and centuries of stories echo in the chambers.</string>
+    <string name="tvInterests">Choose an interest</string>
+    <string name="tvType">Choose a Vacation Type</string>
+    <string name="btBack">Go Back</string>
+</resources>
