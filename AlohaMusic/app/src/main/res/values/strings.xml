@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aloha Music</string>
+    <string name="tvSplash">Sounds of Hawaii</string>
+    <string name="ukulele">Ukulele Image</string>
+    <string name="drums">Drums Image</string>
+    <string name="btUkulele">Play Ukulele Song</string>
+    <string name="btDrums">Play Drums Song</string>
+</resources>
