@@ -10,47 +10,51 @@
         android:id="@+id/ivDrums"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/drums"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835"
+        app:layout_constraintVertical_bias="0.841"
         app:srcCompat="@drawable/drums" />
 
     <Button
         android:id="@+id/btDrums"
-        android:layout_width="363dp"
+        android:layout_width="wrap_content"
         android:layout_height="51dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="19dp"
+        android:insetTop="10dp"
         android:text="@string/btDrums"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivUkulele"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979" />
 
     <ImageView
         android:id="@+id/ivUkulele"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/ukulele"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069"
+        app:layout_constraintVertical_bias="0.005"
         app:srcCompat="@drawable/ukulele" />
 
     <Button
         android:id="@+id/btUkulele"
-        android:layout_width="363dp"
+        android:layout_width="wrap_content"
         android:layout_height="51dp"
-        android:layout_marginTop="9dp"
+        android:insetTop="10dp"
         android:text="@string/btUkulele"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivUkulele"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 </androidx.constraintlayout.widget.ConstraintLayout>
