@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="1278dp"
+        android:layout_height="798dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="VisualLintBounds">
+
+        <ImageView
+            android:id="@+id/ivSail"
+            android:layout_width="280dp"
+            android:layout_height="830dp"
+            android:contentDescription="@string/ivSail"
+            android:src="@drawable/sail"
+            tools:ignore="VisualLintBounds" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="800dp"
+            tools:ignore="VisualLintBounds">
+
+            <TableRow android:layout_width="wrap_content">
+
+                <View android:layout_height="100dp"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:background="#A49E99"
+                    android:gravity="fill_horizontal"
+                    android:padding="110dp"
+                    android:text="Sailing Adventures - Edinburgh, Scotland"
+                    android:textSize="60sp"
+                    android:typeface="serif"/>
+                </TableRow>
+
+            <TableRow>
+
+                <View android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:padding="30dp"
+                    android:text="Sailing Adventures located at Edinburgh Marina in Edinburgh, Scotland."
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+
+            <TableRow>
+
+                <View android:layout_height="50dp"/>
+
+                <Button
+                    android:id="@+id/btDate"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:backgroundTint="#000080"
+                    android:padding="10dp"
+                    android:text="Select the Date for a Full-Day Sailing Trip"
+                    android:textSize="36sp"
+                    tools:ignore="VisualLintButtonSize" />
+            </TableRow>
+
+            <TableRow>
+
+                <View android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/tvReservation"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="36sp"/>
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
