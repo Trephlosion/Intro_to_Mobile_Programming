@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Endangered Species App</string>
+    <string name="tvTitle">Endangered Species</string>
+    <string name="ivLarge">Endangered Species Image</string>
+</resources>
