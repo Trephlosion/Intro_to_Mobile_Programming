@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Electric Car Financing</string>
+    <string name="btPayment">Car Payment</string>
+    <string name="hint1">Number Of Years</string>
+    <string name="hint2">Car Loan Amount</string>
+    <string name="hint3">Interest Rate</string>
+    <string name="ivDescription">Number Of Years Image</string>
+    <string name="tvPayment">Monthly Payment</string>
+    <string name="tvTitle">Electric Car Financing</string>
+</resources>
