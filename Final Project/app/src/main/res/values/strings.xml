@@ -1,0 +1,100 @@
+<resources>
+    <!--    TEMP APP NAME-->
+    <string name="app_name">Drawingtest</string>
+    <string name="tvTitle">Artist Arcade</string>
+
+
+    <!--    SANDBOX DRAW-->
+    <string name="tvSandbox">Free Style</string>
+
+    <!--    SKRIBBL MINIGAME-->
+    <string name="tvGuess">Palette Panic!</string>
+
+    <!--    INVISIBLE INK MINIGAME-->
+    <string name="tvBlind">Ink-lipse</string>
+
+    <!--    COLLABORATION MINIGAME-->
+    <string name="tvCollab">Dye-lemma!</string>
+
+    <!--    TRACE MINIGAME-->
+    <string name="tvTrace">Echo-Sketch</string>
+
+
+    <!--    OPTION MENU-->
+    <string name="tvOptions">Options</string>
+
+    <!--    OPTIONS-->
+    <string-array name="tvTheme">
+        <item>Colorful Theme</item>
+        <item>Moonlit Theme</item>
+        <item>Pastel Theme</item>
+        <!--        <item>Use Device Appearance</item>-->
+    </string-array>
+    <string name="tvVolSlider">Volume</string>
+    <string name="tvSFxSlider">Sound Effects</string>
+
+    <!--    CREDITS-->
+    <string name="tvCredits">Credits</string>
+    <string name="tvCredits1">Made by: Rodney Whitney III Fall-2023</string>
+    <string name="tvCredits2">Final Project For Mobile Programming</string>
+
+    <!--    # OF PPL PER GAME-->
+    <string name="etNumPplHint">Number Of People</string>
+    <string name="etNumPpl">3</string>
+
+    <!--    SPLASH SCREEN-->
+    <string name="tvLoad">Loading</string>
+
+    <!--    POPUP DIALAUGE-->
+    <string name="tvSave">Save Drawings?</string>
+
+
+    <!--    ASSETS-->
+    <string name="ivHamburger">Menu</string>
+
+    <!--    DRAWING TOOLS-->
+    <string name="btTools">More Tools</string>
+    <string-array name="grTool">
+        <item>Brush</item>
+        <item>Pencil</item>
+        <item>Bucket</item>
+        <item>Eraser</item>
+    </string-array>
+
+    <string name="btCurrentTool">Brush</string>
+    <string name="tvSizeMod">Size</string>
+    <string name="btColor">Color Wheel</string>
+    <string name="btSave">Save</string>
+    <string name="btUn">Undo</string>
+    <string name="btRe">Redo</string>
+    <string name="btExit">Exit</string>
+    <string name="btBack">Back</string>
+    <string name="btStart">Start</string>
+
+    <!--    Images-->
+
+    <!--    Icons-->
+    <string name="ivSave">Save icon</string>
+    <string name="ivTools">More Tools Icon</string>
+    <string name="ivBrush">Brush Icon</string>
+    <string name="ivPencil">Pencil Icon</string>
+    <string name="ivBucket">Bucket Icon</string>
+    <string name="ivEraser">Eraser Icon</string>
+    <string name="ivColor">Color Wheel Icon</string>
+    <string name="ivUn">Undo Icon</string>
+    <string name="ivRe">Redo Icon</string>
+
+    <!--    Splash Screen Images-->
+    <string name="ivLogo">Game Logo Image</string>
+    <string name="ivLoad">Loading Splat Icon</string>
+
+
+    <!--    Point System   USES PERSISTENCE-->
+    <string name="tvScore">0</string>
+    <string name="tvHIScore">0</string>
+
+
+    <!--Topics-->
+    <!--INSERT ARRAY FOR THE RANDOM TOPICS: USE CHAT OR SOMETHING TO GENERATE LIST OF ~30 ITEMS-->
+
+</resources>

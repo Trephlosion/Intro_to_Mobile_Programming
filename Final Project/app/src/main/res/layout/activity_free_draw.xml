@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FreeDraw">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- DrawingView for user to draw on -->
+        <com.example.drawingtest.DrawingView
+            android:id="@+id/drawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Side menu container -->
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#DDDDDD"
+            android:visibility="gone">
+
+            <!-- Add buttons for tools, color wheel, undo/redo, save, current tool options -->
+            <Button
+                android:id="@+id/btnTool1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btnTool2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undo" />
+
+            <Button
+                android:id="@+id/btnTool3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/btnTool4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color Palette" />
+
+            <Button
+                android:id="@+id/btnTool5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eraser" />
+
+            <Button
+                android:id="@+id/btnTool6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brush" />
+
+            <Button
+                android:id="@+id/btnTool7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pencil" />
+
+            <Button
+                android:id="@+id/btnTool8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bucket" />
+
+            <Button
+                android:id="@+id/btnTool9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extras" />
+
+            <!-- Add more buttons as needed -->
+
+        </LinearLayout>
+
+        <!-- Toggle button to show/hide the side menu -->
+        <ToggleButton
+            android:id="@+id/btnToggleMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
