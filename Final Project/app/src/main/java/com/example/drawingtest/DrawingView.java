@@ -53,7 +53,7 @@ public class DrawingView extends View implements View.OnTouchListener {
         drawPaint = new Paint();
         drawPaint.setColor(Color.BLACK);
         drawPaint.setAntiAlias(true);
-        drawPaint.setStrokeWidth(10);
+        drawPaint.setStrokeWidth(15);
         drawPaint.setStyle(Paint.Style.STROKE);
         drawPaint.setStrokeJoin(Paint.Join.ROUND);
         drawPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -75,17 +75,16 @@ public class DrawingView extends View implements View.OnTouchListener {
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event) {
+    public boolean onTouch(View v, MotionEvent event) {
         float touchX = event.getX();
         float touchY = event.getY();
-        CGPointArray path = new CGPointArray();
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 drawPath.moveTo(touchX, touchY);
                 break;
             case MotionEvent.ACTION_MOVE:
                 drawPath.lineTo(touchX, touchY);
-
+                userPoints.add(new CGPoint(touchX, touchY));
                 break;
             case MotionEvent.ACTION_UP:
                 drawCanvas.drawPath(drawPath, drawPaint);
@@ -441,25 +440,25 @@ public class DrawingView extends View implements View.OnTouchListener {
      *              the event.
      * @return True if the listener has consumed the event, false otherwise.
      */
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        float touchX = event.getX();
-        float touchY = event.getY();
-
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-            case MotionEvent.ACTION_MOVE:
-                userPoints.add(new CGPoint(touchX, touchY));
-                // Optionally, you can do something with the points here as the user is drawing
-                invalidate(); // Redraw the view if needed
-                break;
-            case MotionEvent.ACTION_UP:
-                // Handle touch up event if needed
-                break;
-        }
-
-        return true; // Consume the touch event
-    }
+//    @Override
+//    public boolean onTouch(View v, MotionEvent event) {
+//        float touchX = event.getX();
+//        float touchY = event.getY();
+//
+//        switch (event.getAction()) {
+//            case MotionEvent.ACTION_DOWN:
+//            case MotionEvent.ACTION_MOVE:
+//
+//                // Optionally, you can do something with the points here as the user is drawing
+//                invalidate(); // Redraw the view if needed
+//                break;
+//            case MotionEvent.ACTION_UP:
+//                // Handle touch up event if needed
+//                break;
+//        }
+//
+//        return true; // Consume the touch event
+//    }
 
     public static CGPointArray createUserInput() {
         // Return the collected user points

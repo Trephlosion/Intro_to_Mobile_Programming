@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.example.drawingtest.DrawingView;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
@@ -468,39 +469,30 @@ public class ImgRecognitionTest extends AppCompatActivity {
         TextView Accuracy = findViewById(R.id.pts);
         int Rounds = 3;
 
-while (Rounds >=1)
-{
-        UnistrokeRecognizer recognizer = new UnistrokeRecognizer();
 
-        // Add templates
-        recognizer.addTemplate("Circle", createCirclePoints());
-        recognizer.addTemplate("Triangle", createTrianglePoints());
-        recognizer.addTemplate("Square", createSquarePoints());
-        recognizer.addTemplate("Smile", createSmilePoints());
+    UnistrokeRecognizer recognizer = new UnistrokeRecognizer();
 
-        // Recognize user input
-        CGPointArray userInput = DrawingView.createUserInput(); // Replace with actual user input
-        UnistrokeResult result = recognizer.recognize(userInput, false);
+    // Add templates
+    recognizer.addTemplate("Circle", createCirclePoints());
+    recognizer.addTemplate("Triangle", createTrianglePoints());
+    recognizer.addTemplate("Square", createSquarePoints());
+    recognizer.addTemplate("Smile", createSmilePoints());
 
-        // Output the result
-        guess.setText(result.name);
-        timer.setText(result.time + " milliseconds");
-        Accuracy.setText(result.score + " points");
+    // Recognize user input
+    CGPointArray userInput = DrawingView.createUserInput(); // Replace with actual user input
+    UnistrokeResult result = recognizer.recognize(userInput, false);
 
-        Rounds--;
+    // Output the result
+    guess.setText(result.name);
+    timer.setText(result.time + " milliseconds");
+    Accuracy.setText(result.score + " points");
 
-    }
-        if (Rounds == 0) {
-            Intent intent = new Intent(ImgRecognitionTest.this, MainActivity.class);
-            startActivity(intent);
-            finish(); // Optional: Finish the current activity
-        }
-    }
+}
 
 
     private static CGPointArray createCirclePoints() {
         // Sample points for a circle
-        CGPointArray points = new CGPointArray();
+        CGPointArray circle = new CGPointArray();
         float centerX = 0;
         float centerY = 0;
         float radius = 100;
@@ -510,42 +502,42 @@ while (Rounds >=1)
             double angle = (2 * Math.PI * i) / numPoints;
             float x = (float) (centerX + radius * Math.cos(angle));
             float y = (float) (centerY + radius * Math.sin(angle));
-            points.add(new CGPoint(x, y));
+            circle.add(new CGPoint(x, y));
         }
 
-        return points;
+        return circle;
     }
 
     private static CGPointArray createTrianglePoints() {
         // Sample points for a triangle
-        CGPointArray points = new CGPointArray();
-        points.add(new CGPoint(0, 0));
-        points.add(new CGPoint(100, 0));
-        points.add(new CGPoint(50, 87));
+        CGPointArray triangle = new CGPointArray();
+        triangle.add(new CGPoint(0, 0));
+        triangle.add(new CGPoint(100, 0));
+        triangle.add(new CGPoint(50, 87));
 
-        return points;
+        return triangle;
     }
 
     private static CGPointArray createSquarePoints() {
         // Sample points for a square
-        CGPointArray points = new CGPointArray();
-        points.add(new CGPoint(0, 0));
-        points.add(new CGPoint(100, 0));
-        points.add(new CGPoint(100, 100));
-        points.add(new CGPoint(0, 100));
+        CGPointArray square = new CGPointArray();
+        square.add(new CGPoint(0, 0));
+        square.add(new CGPoint(100, 0));
+        square.add(new CGPoint(100, 100));
+        square.add(new CGPoint(0, 100));
 
-        return points;
+        return square;
     }
 
     private static CGPointArray createSmilePoints() {
         // Sample points for a simple smile
-        CGPointArray points = new CGPointArray();
-        points.add(new CGPoint(0, 0));
-        points.add(new CGPoint(30, 10));
-        points.add(new CGPoint(60, 0));
-        points.add(new CGPoint(30, -10));
+        CGPointArray smile = new CGPointArray();
+        smile.add(new CGPoint(0, 0));
+        smile.add(new CGPoint(30, 10));
+        smile.add(new CGPoint(60, 0));
+        smile.add(new CGPoint(30, -10));
 
-        return points;
+        return smile;
     }
 
 
